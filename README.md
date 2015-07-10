@@ -1,7 +1,7 @@
 # Android-TCP-IP-Socket
 This repository consists of basic introduction for Server-Client model using Android Wifi Hotspot, which uses TCP/IP model using Primary Sockets
 
-### You need two Android devices to test the demo.
+<b>You need two Android devices to test the demo.</b><br>
 
 ## Instructions: 
 
@@ -16,5 +16,5 @@ This repository consists of basic introduction for Server-Client model using And
 3. Use Wifi settings to connect to the hotspot.<br>
 4. Launch the Client Application.<br>
 
-Note: <br>
-Server application must be launched in device A before launching Client application in Device B.<br>
+</b>Note: <br>
+Server application must be launched in device A before launching Client application in Device B.</b><br>
