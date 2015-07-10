@@ -3,7 +3,7 @@ This repository consists of basic introduction for Server-Client model using And
 
 * You need two Android devices to test the demo
 
-** Instructions:
+** Instructions: **
 
 Server Module:<br>
 1. Install the Server application onto device A.<br>
