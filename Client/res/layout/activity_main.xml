@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeoncloud.androidclient.MainActivity"
+    tools:ignore="MergeRootFrame" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="horizontal" >
+ 
+        <TextView
+            android:id="@+id/textViewsrvrMsg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Server msg"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+        <TextView
+            android:id="@+id/textViewServerMessage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+ 
+</FrameLayout>
