@@ -1917,11 +1917,12 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09003d;
         public static final int action_mode_bar_stub=0x7f09003c;
         public static final int action_mode_close_button=0x7f090025;
-        public static final int action_settings=0x7f090059;
+        public static final int action_settings=0x7f09005a;
         public static final int activity_chooser_view_content=0x7f090026;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090019;
         public static final int beginning=0x7f090020;
+        public static final int button1=0x7f090057;
         public static final int buttonPanel=0x7f090036;
         public static final int checkbox=0x7f090038;
         public static final int collapseActionView=0x7f09001a;
@@ -1956,7 +1957,7 @@ containing a value of this type.
         public static final int radio=0x7f09003a;
         public static final int screen=0x7f090015;
         public static final int scrollView=0x7f090032;
-        public static final int scrollView1=0x7f090057;
+        public static final int scrollView1=0x7f090058;
         public static final int search_badge=0x7f090044;
         public static final int search_bar=0x7f090043;
         public static final int search_button=0x7f090045;
@@ -1980,7 +1981,7 @@ containing a value of this type.
         public static final int tabMode=0x7f09000c;
         public static final int textSpacerNoButtons=0x7f090033;
         public static final int textViewClMsg=0x7f090056;
-        public static final int textViewClientMessage=0x7f090058;
+        public static final int textViewClientMessage=0x7f090059;
         public static final int textViewServerIP=0x7f090052;
         public static final int textViewServerPort=0x7f090055;
         public static final int textViewSrvrIP=0x7f090050;

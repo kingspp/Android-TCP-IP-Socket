@@ -78,6 +78,17 @@
             android:text="Client Message"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:minHeight="28dp"
+                android:minWidth="28dp"
+                android:text="Clear" />
+
         </RelativeLayout>
 
         <ScrollView

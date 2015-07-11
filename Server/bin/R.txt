@@ -417,11 +417,12 @@ int id action_menu_presenter 0x7f090006
 int id action_mode_bar 0x7f09003d
 int id action_mode_bar_stub 0x7f09003c
 int id action_mode_close_button 0x7f090025
-int id action_settings 0x7f090059
+int id action_settings 0x7f09005a
 int id activity_chooser_view_content 0x7f090026
 int id alertTitle 0x7f090030
 int id always 0x7f090019
 int id beginning 0x7f090020
+int id button1 0x7f090057
 int id buttonPanel 0x7f090036
 int id checkbox 0x7f090038
 int id collapseActionView 0x7f09001a
@@ -456,7 +457,7 @@ int id progress_horizontal 0x7f090008
 int id radio 0x7f09003a
 int id screen 0x7f090015
 int id scrollView 0x7f090032
-int id scrollView1 0x7f090057
+int id scrollView1 0x7f090058
 int id search_badge 0x7f090044
 int id search_bar 0x7f090043
 int id search_button 0x7f090045
@@ -480,7 +481,7 @@ int id submit_area 0x7f09004b
 int id tabMode 0x7f09000c
 int id textSpacerNoButtons 0x7f090033
 int id textViewClMsg 0x7f090056
-int id textViewClientMessage 0x7f090058
+int id textViewClientMessage 0x7f090059
 int id textViewServerIP 0x7f090052
 int id textViewServerPort 0x7f090055
 int id textViewSrvrIP 0x7f090050

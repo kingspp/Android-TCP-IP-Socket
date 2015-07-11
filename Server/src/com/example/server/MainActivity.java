@@ -18,12 +18,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 	private TextView tvClientMsg, tvServerIP, tvServerPort;
 	private final int SERVER_PORT = 8080;
 	private String Server_Name = "Kingspp";
+	Button clear;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,18 @@ public class MainActivity extends ActionBarActivity {
 		tvServerPort = (TextView) findViewById(R.id.textViewServerPort);
 		tvServerPort.setText(Integer.toString(SERVER_PORT));
 		getDeviceIpAddress();
+		
+		clear = (Button)findViewById(R.id.button1);
+		clear.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				tvClientMsg.setText("");
+				
+			}
+		});
+		
 		new Thread(new Runnable() {
 
 			@Override
