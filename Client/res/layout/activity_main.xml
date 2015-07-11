@@ -5,32 +5,41 @@
     android:layout_height="match_parent"
     tools:context="com.codeoncloud.androidclient.MainActivity"
     tools:ignore="MergeRootFrame" >
- 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="25dp"
         android:orientation="horizontal" >
- 
-        <TextView
-            android:id="@+id/textViewsrvrMsg"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Server msg"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
- 
-        <TextView
-            android:id="@+id/textView2"
+
+     
+
+        <Button
+            android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=":"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
- 
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewsrvrMsg"
+            android:layout_marginTop="30dp"
+            android:text="Send" />
+
         <TextView
             android:id="@+id/textViewServerMessage"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentRight="true"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewsrvrMsg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:text="Server msg :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
  
 </FrameLayout>
