@@ -456,6 +456,7 @@ int id progress_horizontal 0x7f090008
 int id radio 0x7f09003a
 int id screen 0x7f090015
 int id scrollView 0x7f090032
+int id scrollView1 0x7f090057
 int id search_badge 0x7f090044
 int id search_bar 0x7f090043
 int id search_button 0x7f090045
@@ -479,7 +480,6 @@ int id submit_area 0x7f09004b
 int id tabMode 0x7f09000c
 int id textSpacerNoButtons 0x7f090033
 int id textViewClMsg 0x7f090056
-int id textViewClMsg1 0x7f090057
 int id textViewClientMessage 0x7f090058
 int id textViewServerIP 0x7f090052
 int id textViewServerPort 0x7f090055

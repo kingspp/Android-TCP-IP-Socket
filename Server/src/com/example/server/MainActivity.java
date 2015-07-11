@@ -23,6 +23,7 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 	private TextView tvClientMsg, tvServerIP, tvServerPort;
 	private final int SERVER_PORT = 8080;
+	private String Server_Name = "Kingspp";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
 
 			@Override
 			public void run() {
+				
 				try {
 					ServerSocket socServer = new ServerSocket(SERVER_PORT);
 					Socket socClient = null;
@@ -105,14 +107,14 @@ public class MainActivity extends ActionBarActivity {
 				PrintWriter out = new PrintWriter(mySocket.getOutputStream(),
 						true);
 
-				out.println("Hello from server");
+				out.println("Welcome to \""+Server_Name+"\" Server");
 
 				BufferedReader br = new BufferedReader(
 						new InputStreamReader(is));
 
 				result = br.readLine();
 
-				mySocket.close();
+				//mySocket.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -122,7 +124,8 @@ public class MainActivity extends ActionBarActivity {
 		@Override
 		protected void onPostExecute(String s) {
 
-			tvClientMsg.setText(s);
+			tvClientMsg.append(s+"\n");
+			
 		}
 	}
 }

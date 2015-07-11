@@ -1956,6 +1956,7 @@ containing a value of this type.
         public static final int radio=0x7f09003a;
         public static final int screen=0x7f090015;
         public static final int scrollView=0x7f090032;
+        public static final int scrollView1=0x7f090057;
         public static final int search_badge=0x7f090044;
         public static final int search_bar=0x7f090043;
         public static final int search_button=0x7f090045;
@@ -1979,7 +1980,6 @@ containing a value of this type.
         public static final int tabMode=0x7f09000c;
         public static final int textSpacerNoButtons=0x7f090033;
         public static final int textViewClMsg=0x7f090056;
-        public static final int textViewClMsg1=0x7f090057;
         public static final int textViewClientMessage=0x7f090058;
         public static final int textViewServerIP=0x7f090052;
         public static final int textViewServerPort=0x7f090055;

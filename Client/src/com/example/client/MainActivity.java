@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
 	Button send;	
 	final private String SERVER_PORT = "8080";
 	int id=0;
+	private String Client_Name = "Bobby";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
 				ClientAsyncTask clientAST = new ClientAsyncTask();
 				clientAST.execute(new String[] {
 						intToIP(myWifiManager.getDhcpInfo().gateway), SERVER_PORT,
-				hello[id] });
+				Client_Name+" : "+hello[id] });
 				Toast.makeText(MainActivity.this, hello[id],	Toast.LENGTH_SHORT).show();
 				if(id++>=2)
 					id=0;
