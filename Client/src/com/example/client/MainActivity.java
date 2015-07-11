@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
-
 import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
@@ -18,42 +17,35 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
-	private TextView tvServerMessage;
-	
-	String hello[] = {"Hello", "Prathyush", "Mysore"};
+	private TextView tvServerMessage;	
 	Button send;	
 	final private String SERVER_PORT = "8080";
 	int id=0;
-	private String Client_Name = "Bobby";
-
+	private String Client_Name = "Bobby";	
+	EditText textS;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		final WifiManager myWifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 		tvServerMessage = (TextView) findViewById(R.id.textViewServerMessage);
+		textS = (EditText)findViewById(R.id.editText1);
 		send =(Button) findViewById(R.id.button1);		
 		send.setOnClickListener(new OnClickListener() {
-
 			@Override
-			public void onClick(View view) {
-								
+			public void onClick(View view) {								
 				ClientAsyncTask clientAST = new ClientAsyncTask();
 				clientAST.execute(new String[] {
 						intToIP(myWifiManager.getDhcpInfo().gateway), SERVER_PORT,
-				Client_Name+" : "+hello[id] });
-				Toast.makeText(MainActivity.this, hello[id],	Toast.LENGTH_SHORT).show();
-				if(id++>=2)
-					id=0;
+				Client_Name+" : "+textS.getText().toString() });
 			}
-
-		});
-
-	
+		});	
 	}
 
 	public String intToIP(int i) {

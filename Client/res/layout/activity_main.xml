@@ -12,25 +12,6 @@
         android:layout_margin="25dp"
         android:orientation="horizontal" >
 
-     
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/textViewsrvrMsg"
-            android:layout_marginTop="30dp"
-            android:text="Send" />
-
-        <TextView
-            android:id="@+id/textViewServerMessage"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button1"
-            android:layout_alignParentRight="true"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
         <TextView
             android:id="@+id/textViewsrvrMsg"
             android:layout_width="100dp"
@@ -39,6 +20,35 @@
             android:layout_below="@+id/textView2"
             android:text="Server msg :"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewsrvrMsg"
+            android:layout_marginTop="24dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewServerMessage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText1"
+            android:layout_alignParentRight="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="14dp"
+            android:text="Send" />
 
     </RelativeLayout>
  
